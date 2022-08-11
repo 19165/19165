@@ -1,0 +1,14 @@
+num = int(input("Enter Number: "))
+base = 2
+b = ''
+while num != 0:
+    # Method Process
+    # print(f'{int(num)} / {base} = {int(num / base)} , reminder = {int(num % base)}')
+    
+
+    reminder = int(num % base)
+    num = int(num / base)
+
+    reminder = str(reminder)
+    b = b + reminder
+print(b[::-1])
